@@ -1,0 +1,80 @@
+Step 1: Open the Linux Terminal
+Start your Linux virtual machine (Kali Linux or Ubuntu). 
+Open Terminal.
+
+
+Step 2: Create the C Program
+Create a new file named buffer.c.
+nano buffer.c
+ 
+#include <stdio.h>
+#include <string.h>
+#include <strings.h>
+
+int main()
+{
+char buff[100];
+int pass = 0;
+printf("\nEnter the password:\n");
+
+if (fgets(buff, sizeof(buff), stdin) == NULL)
+{
+    printf("Error reading password.\n");
+    return 1;
+}
+
+buff[strcspn(buff, "\n")] = '\0';
+
+if (strcasecmp(buff, "thegeekstuff") == 0)
+{
+    printf("\nCorrect Password\n");
+    pass = 1;
+}
+else
+{
+    printf("\nWrong Password\n");
+}
+if (pass)
+{
+    printf("\nRoot privileges given to the user\n");
+}
+return 0;
+}
+
+Save the file. Press
+Ctrl + O
+Press Enter
+Then
+Ctrl + X
+
+
+Step 3: Compile the Program
+Compile using GCC.
+
+gcc -g -fno-stack-protector -z execstack -o buffer buffer.c
+
+
+
+Step 4: Run the Program
+./buffer
+
+
+Run 1 (Correct Password)
+
+Enter the password:
+thegeekstuff 
+Correct Password
+Root privileges given to the user
+
+Run 2 (Incorrect Password)
+
+Run again.
+./buffer
+
+Enter the password:
+hello 
+Wrong Password
+No root privileges are granted.
+
+
+

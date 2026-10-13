@@ -1,0 +1,53 @@
+Step 1: Create the First Text File
+
+1. Open Notepad.
+Student Name: Rahul 
+USN: 1DS22CS001
+Department: CSE 
+Semester: 7 
+College: DSCE
+3. Click File → Save As.
+4. Save the file as: File1.txt
+
+
+Step 2: Create the Second Text File
+
+1. Open Notepad.
+Student Name: Rahul Kumar 
+USN: 1DS22CS001
+Department: Computer Science 
+Semester: 7
+College: DSCE Bangalore
+3. Click File → Save As.
+4. Save the file as: File2.txt
+
+
+Step 3: Install Compare It!
+	https://www.grigsoft.com/wincmp3.htm
+
+Step 4: Launch the Compare It! Tool
+
+Step 5: Load the First File
+1. Click the Browse/Open button on the left side.
+2. Navigate to the location where File1.txt is saved.
+3. Select File1.txt.
+4. Click Open.
+
+
+Step 6: Load the Second File
+1. Click the Browse/Open button on the right side.
+2. Select File2.txt.
+3. Click Open.
+
+Step 7: Compare the Files
+Typical color indications include:
+
+• Yellow – Modified text
+• Green – Newly added text
+• Red – Deleted text
+
+Step 8: Analyze the Differences
+
+Step 9: Generate a Difference Report
+ 	Click File → Print or Print Preview.
+
